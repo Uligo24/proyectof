@@ -1,0 +1,153 @@
+/* Reset some basic styles for better cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+  }
+  
+  /* Main container */
+  .first-screen-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #f39c12;
+  }
+  
+  /* Hero section */
+  .hero-section {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Car gallery section */
+  .car-gallery {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .car-gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .car-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .car-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .car-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .car-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .car-card h3 {
+    font-size: 1.5rem;
+    margin: 15px;
+  }
+  
+  .car-card .price {
+    font-size: 1.2rem;
+    color: #27ae60;
+    margin-bottom: 15px;
+  }
+  
+  .car-card .buy-button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .car-card .buy-button:hover {
+    background-color: #e67e22;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .car-gallery h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
